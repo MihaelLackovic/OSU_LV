@@ -13,9 +13,9 @@ plt.ylabel("Tezina")
 plt.title("Omjer visine i težine")
 
 
-visina2=visina[::50]
+visina2=visina[:50:]
 print(visina2)
-tezina2=tezina[::50]
+tezina2=tezina[:50:]
 print(tezina2)
 
 plt.scatter(visina2,tezina2)
