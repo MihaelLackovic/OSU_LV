@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 titanic_df = pd.read_csv('titanic.csv')
 
 broj_zena = titanic_df[titanic_df['Sex'] == 'female'].shape[0]
+broj_zena = df['spol'].value_counts()['žena']
 print(f'a) Broj žena u skupu podataka: {broj_zena}')
 
 postotak_ne_prezivjelih = (1 - titanic_df['Survived'].mean()) * 100
