@@ -65,7 +65,7 @@ X_train_n = sc.fit_transform(X_train)
 X_test_n = sc.transform((X_test))
 
 # Model logisticke regresije
-LogReg_model = LogisticRegression(penalty='none') 
+LogReg_model = LogisticRegression(penalty=None) 
 LogReg_model.fit(X_train_n, y_train)
 
 # Evaluacija modela logisticke regresije
